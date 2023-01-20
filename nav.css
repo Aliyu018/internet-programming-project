@@ -1,0 +1,202 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url(images/sky2.webp);
+    background-size:cover ;
+}
+
+
+nav{
+    background: rgb(48, 48, 90);
+    height: 80px;
+    width: 100%;
+}
+label.logo{
+    color: white;
+    font-size:50px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+font-family: 'Courier New', Courier, monospace;
+}
+#navlist{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline;
+    line-height: 80px;
+    margin: 0px;
+}
+nav ul li a{
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 30px;
+    text-transform:uppercase;
+}
+a.active,a:hover{
+    background: aqua;
+    transition: 0.5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+float: right;
+line-height: 80px;
+margin-right: 40px;
+cursor: pointer;
+}
+#check{
+    display: none;
+
+}
+#h34{
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;}
+@media(max-width:952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media(max-width:858px){
+    .checkbtn{
+        display: block;
+    }
+    #navlist{
+        position: fixed;
+        width: 100%;
+        height:100vh ;
+        background: navy;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition:all 0.5s ;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+
+    }
+a:hover,a:active{
+    background: none;
+    color: blue;
+}
+#check:checked ~ ul{
+    left: 0;
+
+}
+}
+
+#recp{
+margin-top: 60px;   
+ float: left;
+    width: 500px;
+    
+
+}
+
+
+ #pics{
+width: 500px;
+
+ } 
+.bbb{
+    border: solid 5px white;
+    width: 800px;
+    
+    float: right;
+margin-right: 200px;
+
+font-size: large;
+}
+p{
+    color: antiquewhite;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#h34{
+    color: aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.submit{
+    width: 10%;
+    padding: 10px 0;
+    font-size: 22px;
+    border-radius: 7px;
+    font-weight: 500;
+    border: none;
+    background-color: black;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .3s ease;
+  }
+  input, textarea{
+    color:black;
+    background-color: none;
+    border: 2px solid black;
+    box-shadow: inset 0 1px 5px white;
+    width: 100;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 25px;
+    border-radius: 7px;
+    margin-bottom: 15px;
+    outline:none;
+    transition: all.3s ease;
+  }
+/* items */
+#itemstable{
+  
+    color:white;
+}
+#itable{
+   font-size: 20px;
+   text-transform: uppercase;
+}
+
+#itpic{width: 360px;
+
+}
+.hh{
+    text-align: center;
+    color: aqua;
+    text-decoration: underline;
+    
+    
+ }
+/* shopping */
+  .shoppingtb{
+     background-color: rgb(111, 132, 172);
+     padding: 50px;
+     width: 90%;
+     border: 5px solid black;
+    
+     
+  }
+
+    .stable{
+        border: 3px solid rgb(34, 21, 63);}
+    .str{
+        border: 3px solid rgb(34, 21, 63);}
+    
+.tbcol{
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

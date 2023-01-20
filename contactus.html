@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contactus</title>
+    <link rel="stylesheet" href="nav.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fa fa-bars"></i>
+      </label>
+      <label class="logo"> Sky Dorm Rental </label>
+      <ul id="navlist">
+        <li><a href="index.html">Home Page </a></li>
+        <li><a href="items.html">Items Page </a></li>
+        <li><a href="shoppingtk.html">Shopping </a></li>
+        <li><a class="active" href="contactus.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <form>
+      <input
+        type="text"
+        name="name1"
+        placeholder="Name/Surname"
+        id="clientname"
+      />
+      <input
+        type="number"
+        name="telephone"
+        placeholder="Tel:"
+        id="clientphonephone"
+      />
+      <input
+        type="text"
+        name="email"
+        placeholder="example@mail.coml"
+        id="clientmail"
+      /><br />
+      <textarea
+        name="text"
+        placeholder="message"
+        cols="50"
+        rows="5"
+        id="clientmessage"
+      ></textarea
+      ><br />
+      <button type="button" onclick="validate()" id="qwe">SUBMIT</button>
+    </form>
+    <br /><br /><br />
+    <div>
+      <p><b>location:</b> Cyprus-nicosia-yenikent</p>
+      <br />
+      <p><b>Mobile:</b> 05338303401</p>
+      <br />
+      <p><b>Email:</b> skydorm@outlook.com</p>
+      <br />
+      <p><b>Service hours :</b> 7AM - 12AM</p>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shopping</title>
+    <link rel="stylesheet" href="nav.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fa fa-bars"></i>
+      </label>
+      <label class="logo"> Sky Dorm Rental </label>
+      <ul id="navlist">
+        <li><a href="index.html">Home Page </a></li>
+        <li><a href="items.html">Items Page </a></li>
+        <li><a class="active" href="shoppingtk.html">Shopping </a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <table class="shoppingtb" >
+      <tr id="tbrow">
+          <th id="tbcol">ROOMS FOR RENT</th>
+          <th id="tbcol">TYPE OF ROOM</th>
+          <th id="tbcol">NO OF ROOMS</th>
+          <th id="tbcol">COST OF ROOMS</th>
+      </tr>
+      <tr> 
+          <td class="stable"><input type="checkbox" id="room1" name="room1" onclick="room1CheckBox()">
+              <label for="room1"> SINGLE ROOOM</label><br>
+          </td>
+          <td class="stable">
+              <input type="radio" id="pr1" name="roomtype1" value="500" onclick="room1price(this);">
+              <label for="pr1"> REGULAR (500$)</label><br>
+              
+              <input type="radio" id="pr3" name="roomtype1" value="850" onclick="room1price(this);">
+              <label for="pr3">V.I.P (850$)</label><br/>
+     <input type="radio" id="pr3" name="roomtype1" value="1900" onclick="room1price(this);">
+              <label for="pr3">PRESIDENTIAL suit(1900$)</label>
+          </td>
+          <td class="stable">
+              <select  id="noofrooms1" onchange="room1Change()">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                
+                </select>
+          </td>
+          <td class="stable">
+              <p id="totalcostroom1">0</p>
+          </td>
+      </tr>
+
+      <tr>
+          <td class="stable"><input type="checkbox" id="room2" name="room2" onclick="room2CheckBox()">
+              <label for="room2">DOUBLEROOM</label><br>
+          </td>
+          <td class="stable">
+              <input type="radio" id="pr1room2" name="roomtype2" value="600" onclick="room2price(this);">
+              <label for="pr1room2"> REGULAR (600$)</label><br>
+              
+              <input type="radio" id="pr3room2" name="roomtype2" value="950" onclick="room2price(this);">
+              <label for="pr3room2">V.I.P (950$)</label><br/>
+     <input type="radio" id="pr3room2" name="roomtype2" value="2500" onclick="room2price(this);">
+              <label for="pr3room2">PRESIDENTIAL suit(2500$)</label><br/>
+          </td>
+          <td class="stable">
+              <select  id="noofrooms2" onchange="room2Change()">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  
+                </select>
+          </td>
+          <td class="stable">
+              <p id="totalcostroom2">0</p>
+          </td>
+      </tr> cost 
+      <tr class="str">
+          <td class="stable"><input type="checkbox" id="room3" name="room3" onclick="room3CheckBox()">
+              <label for="room3">TRIPLE ROOM</label><br>
+          </td>
+          <td class="stable">
+              <input type="radio" id="pr1room3" name="roomtype3" value="700" onclick="room3price(this);">
+              <label for="pr1room3">REGULAR (700$)</label><br>
+              
+              <input type="radio" id="pr3room3" name="roomtype3" value="1050" onclick="room3price(this);">
+              <label for="pr3room3">V.I.P (1050$)</label><br/>
+    <input type="radio" id="pr3room3" name="roomtype3" value="3000" onclick="room3price(this);">
+              <label for="pr3room3">PRESIDENTIAL suit(3000$)</label>
+          </td>
+          <td class="stable">
+              <select  id="noofrooms3" onchange="room3Change()">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                
+                </select>
+          </td>
+          <td class="stable">
+              <p id="totalcostroom3">0</p>
+          </td>
+      </tr>
+      <tr class="str">
+          <td class="stable"><input type="checkbox" id="room4" name="room4" onclick="room4CheckBox()">
+              <label for="room4"> QUADRUPLE ROOM</label><br>
+          </td>
+          <td class="stable">
+              <input type="radio" id="pr1room4" name="roomtype4" value="700" onclick="room4price(this);">
+              <label for="pr1room4">REGULAR (700$)</label><br>
+              
+              <input type="radio" id="pr3room4" name="roomtype4" value="1150" onclick="room4price(this);">
+              <label for="pr3room4">V.I.P (1150$)</label><br/>
+    <input type="radio" id="pr3room4" name="roomtype4" value="4000" onclick="room4price(this);">
+              <label for="pr3room4">PRESIDENTIAL suit(4000$)</label>
+          </td>
+          <td class="stable">
+              <select  id="noofrooms4" onchange="room4Change()">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                
+                </select>
+          </td>
+          <td class="stable">
+              <p id="totalcostroom4">0</p>
+          </td>
+      </tr>
+      <tr class="stable">
+          <td colspan="2" class="stable">Total Cost (After 15% discount) <br>Spend over 1000 to get a 15% discount</td>
+          <td class="stable"><button onclick="calculateTotalCostAfterDiscount()">Calculate</button></td>
+          <td class="stable"><p id="totalcostafterdiscount">0</p></td>
+      </tr>
+
+  </table>
+ 
+</div>
+<script src="index.js"></script>
+  </body>
+</html>
+
+room1price
